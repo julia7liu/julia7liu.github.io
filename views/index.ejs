@@ -6,10 +6,10 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-    <script src="app.js"></script>
+    <script src="javascripts/app.js"></script>
   </head>
   <body ng-app="tinoWIT" ng-controller="MainCtrl">
-  	<nav class="navbar navbar-inverse">
+  	<nav class="navbar">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a href="/#/home" class="navbar-brand"><span class="glyphicon glyphicon-home"></span></a>
@@ -21,36 +21,43 @@
 				<li><a href="/#/resources">Resources</a></li>
 			</ul>
 		</div>
-	</nav>
-	<div class="row">
-		<ui-view></ui-view>
-	</div>
+	</nav>	
+	<ui-view></ui-view>
 	<script type="text/ng-template" id="/home.html">
-		<div class="page-header">
-    		<h1>Be Witty</h1>
+		<div class="row page home-page">
+			<h1 class="page-title">(Be)<h1>
+			<h1 class="page-title">{<p style="color: red; display: inline;">Wit</p>ty}</h1>
   		</div>
-    	<div ng-repeat="post in posts | orderBy : '-upvotes'">
-  			{{post.title}} - upvotes: {{post.upvotes}}
+		<div class="row page-info">
+			<div class="col-xs-4"><a href="">Web</a></div>
+			<div class="col-xs-4"><a href="">iOS</a></div>
+			<div class="col-xs-4"><a href="">Intro</a></div>
+		</div>
+		<div class="row page-contact">
+			<h2 class="page-section-title"><p style="color: red; display: inline;">{</p>Contact Us<p style="color: red; display: inline;">}</p></h2>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/aboutus.html">
-		<div class="page-header">
-    		<h1>We are Women In Technology</h1>
+		<div class="row page aboutus-page">
+    		<h1 class="page-title">Welcome</h1>
   		</div>
+		<div class="row">
+			
+		</div>
 	</script>
 	<script type="text/ng-template" id="/events.html">
 		<div class="page-header">
-    		<h1>Events</h1>
+    		<h1 class="page-title">Events</h1>
   		</div>
 	</script>
 	<script type="text/ng-template" id="/tracks.html">
 		<div class="page-header">
-    		<h1>Tracks</h1>
+    		<h1 class="page-title">Tracks</h1>
   		</div>
 	</script>
 	<script type="text/ng-template" id="/resources.html">
 		<div class="page-header">
-    		<h1>Resources</h1>
+    		<h1 class="page-title">Resources</h1>
   		</div>
 	</script>
   </body>
