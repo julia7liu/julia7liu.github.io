@@ -234,7 +234,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info .page-subheading a {
-	padding: 20px;
+	padding: 10px;
 	border-bottom: 5px solid #fff;
 }
 
@@ -243,7 +243,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info p {
-	margin-top: 40px;
+	margin-top: 20px;
 	font-size: 0.75em;
 	text-transform: none;
 	line-height: 16pt;
