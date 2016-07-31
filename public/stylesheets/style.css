@@ -126,6 +126,7 @@ a:hover, a:active, a:focus {
 	position: relative;
     top: 75px;
 	width: 100%;
+	text-align: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -184,6 +185,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info .page-info-icon img {
+	text
 	width: 100px;
 	height: 100px;
 }
@@ -196,7 +198,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info .page-subheading {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	text-transform: uppercase;
 	padding: 10px;
 	color: #000;
@@ -212,12 +214,12 @@ a:hover, a:active, a:focus {
 	color: #fff;
 }
 
-.page-info .page-heading a {
+.page-info .page-subheading a {
 	padding: 20px;
 	border-bottom: 5px solid #fff;
 }
 
-.page-info a:hover, .page-info a:active, .page-info a:focus {
+.page-info .page-subheading a:hover, .page-info .page-subheading a:active, .page-info .page-subheading a:focus {
 	border-bottom: 5px solid red;
 }
 
