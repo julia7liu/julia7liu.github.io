@@ -168,6 +168,7 @@ a:hover, a:active, a:focus {
 	padding: 40px;
 	background: #fa9090;
 	letter-spacing: 2px;
+	color: #000;
 }
 
 .page-info .page-info-icon {
@@ -182,7 +183,7 @@ a:hover, a:active, a:focus {
 	border-radius: 50%;
 }
 
-.page-info img {
+.page-info .page-info-icon img {
 	width: 100px;
 	height: 100px;
 }
@@ -191,7 +192,7 @@ a:hover, a:active, a:focus {
 	font-size: 2em;
 	text-transform: uppercase;
 	padding: 10px;
-	color: #fff;
+	color: #000;
 }
 
 .page-info .page-list {
@@ -201,11 +202,11 @@ a:hover, a:active, a:focus {
 .page-info .number {
 	display: inline-block;
 	font-size: 2em;
-	color: red;
+	color: #fff;
 }
 
 .page-info .page-heading a {
-	padding: 10px;
+	padding: 20px;
 	border-bottom: 5px solid #fff;
 }
 
