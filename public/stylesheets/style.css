@@ -1,3 +1,17 @@
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
 body {
   padding: 0px;
   font: 14px Helvetica, Arial, sans-serif;
@@ -63,6 +77,18 @@ a:hover, a:active, a:focus {
 	text-transform: uppercase;
     letter-spacing: 5px;
     color: #fff;
+}
+
+.title-animation div {
+	animation: type 2s steps(60, end);
+}
+
+.title-animation div:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+
+.title-animation span {
+	animation: blink 1s infinite;
 }
 
 .page-section-title {
@@ -140,20 +166,27 @@ a:hover, a:active, a:focus {
 .page-info p {
 	font-size: 0.75em;
 	text-transform: none;
-	letter-spacing: 0px;
 	line-height: 18pt;
 }
 
 .page-description {
-	padding: 20px;
+	padding: 40px;
 	background: #fff;
 	letter-spacing: 2px;
 	text-align: center;
+	line-height: 16pt;
 }
 
 .page-description .page-description-heading {
-	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
 	padding: 10px;
+}
+
+.page-description p {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-description button {
@@ -184,6 +217,5 @@ a:hover, a:active, a:focus {
 	margin-right: auto;
 	font-size: 1.5em;
 	color: #fff;
-	text-transform: uppercase;
 	padding: 10px;
 }
