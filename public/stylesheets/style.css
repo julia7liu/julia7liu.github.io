@@ -147,7 +147,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-section .page-subheading {
-	font-size: 1em;
+	font-size: 1.5em;
 	text-transform: uppercase;
 	padding: 10px;
 	color: #fff;
@@ -188,11 +188,20 @@ a:hover, a:active, a:focus {
 }
 
 .page-info .page-heading {
-	margin: 40px;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #fff;
 }
 
 .page-info .page-list {
 	list-style: none;
+}
+
+.page-info .number {
+	display: inline-block;
+	font-size: 2em;
+	color: red;
 }
 
 .page-info .page-heading a {
