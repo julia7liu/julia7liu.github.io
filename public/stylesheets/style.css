@@ -46,18 +46,17 @@ a:hover, a:active, a:focus {
 	padding: 10px 30px;
 	margin: 10px;
 	color: #fff;
-	border: 2px solid #fff;
+	border: 3px solid #fff;
 }
 
 .btn-box:hover, .btn-box:active, .btn-box:focus {
 	color: red;
-	border: 2px solid red;
+	border: 3px solid red;
 }
 
 .page-title {
 	position: relative;
-	top: 40px;
-	left: 40px;
+	top: 80px;
 	font-size: 64pt;
 	font-family: "Courier New";
 	font-weight: bold;
@@ -93,7 +92,8 @@ a:hover, a:active, a:focus {
 
 .home-page {
 	height: 500px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/WIT-Wallpaper2.jpg");
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/desk-workspace.jpg");
 }
 
 .aboutus-page {
@@ -102,7 +102,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info {
-	padding: 20px;
+	padding: 40px;
 	background: #fa9090;
 	letter-spacing: 2px;
 }
@@ -142,13 +142,13 @@ a:hover, a:active, a:focus {
 	text-transform: none;
 	letter-spacing: 0px;
 	line-height: 18pt;
-	margin-bottom: 20px;
 }
 
 .page-description {
 	padding: 20px;
 	background: #fff;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 .page-description .page-description-heading {
@@ -156,13 +156,34 @@ a:hover, a:active, a:focus {
 	padding: 10px;
 }
 
+.page-description button {
+	color: #000;
+	border: 3px solid #000;
+}
+
 .page-backdrop {
+	height: 300px;
 	padding: 20px;
-	background-image: url();
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/designer-workspace.jpg");
+	background-position: 0% 45%;
+	line-height: 26pt;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 .page-backdrop .page-backdrop-heading {
-	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-backdrop .page-backdrop-subheading {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
 	padding: 10px;
 }

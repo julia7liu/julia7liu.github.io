@@ -12,13 +12,13 @@ function($scope){
 
 }]);
 
-app.controller('BlogCtrl', [
+app.controller('TracksCtrl', [
 '$scope',
 function($scope){
 
 }]);
 
-app.controller('TracksCtrl', [
+app.controller('BlogCtrl', [
 '$scope',
 function($scope){
 
@@ -46,15 +46,15 @@ function($stateProvider, $urlRouterProvider) {
 		templateUrl: '/aboutus.html',
 		controller: 'AboutUsCtrl'
 	})
-	.state('blog', {
-		url: '/blog',
-		templateUrl: '/blog.html',
-		controller: 'BlogCtrl'
-	})
 	.state('tracks', {
 		url: '/tracks',
 		templateUrl: '/tracks.html',
 		controller: 'TracksCtrl'
+	})
+	.state('blog', {
+		url: '/blog',
+		templateUrl: '/blog.html',
+		controller: 'BlogCtrl'
 	})
 	.state('resources', {
 		url: '/resources',
