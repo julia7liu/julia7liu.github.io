@@ -119,12 +119,16 @@ a:hover, a:active, a:focus {
 	           blink-caret .5s step-end infinite alternate;
 }
 
+.aboutus-page .page-subheading {
+	font-size: 32pt;
+	text-transform: uppercase;
+}
+
 @keyframes typing { from { width: 9px; } }
 @keyframes blink-caret { 50% { border-color: transparent; } }
 
 .page-section-title {
 	font-size: 28pt;
-	font-family: "Courier New";
 	font-weight: bold;
 	text-transform: uppercase;
     letter-spacing: 5px;
@@ -158,7 +162,7 @@ a:hover, a:active, a:focus {
 }
 
 .aboutus-page {
-	height: 300px;
+	height: 400px;
 	background-image: url("../images/coding.jpg");
 }
 
