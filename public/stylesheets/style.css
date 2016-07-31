@@ -119,22 +119,8 @@ a:hover, a:active, a:focus {
 	           blink-caret .5s step-end infinite alternate;
 }
 
-.aboutus-page .page-subheading {
-	font-size: 32pt;
-	text-transform: uppercase;
-}
-
 @keyframes typing { from { width: 9px; } }
 @keyframes blink-caret { 50% { border-color: transparent; } }
-
-.page-section-title {
-	font-size: 28pt;
-	font-weight: bold;
-	text-transform: uppercase;
-    letter-spacing: 5px;
-    padding: 20px 40px;
-    color: #fff;
-}
 
 .page {
 	position: relative;
@@ -218,6 +204,12 @@ a:hover, a:active, a:focus {
 
 .page-description .page-heading {
 	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-description .page-subheading {
+	font-size: 32pt;
 	text-transform: uppercase;
 	padding: 10px;
 }
