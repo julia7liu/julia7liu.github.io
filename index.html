@@ -95,10 +95,9 @@
 			</div>
 			<p>Women are still shockingly underrepresented in the STEM industry, but the Women In Technology club at Cupertino High School is here to help change that.</p>
 			<div class="page-subheading">Our Mission</div>
-			<p>Dive into one of our tracks</p>
-			<a href="/#/tracks"><button class="btn btn-box">Tracks</button></a>
-			<p>Get up to date with our meetings, guest speaker events, and more club activities</p>
-			<a href="/#/blog"><button class="btn btn-box">Blog</button></a>
+			<p>Teach female students at Tino programming language essentials as well as web and mobile development</p>
+			<p>Encourage members to be more active in computer science and technology-related activities</p>
+			<p>Invite female guest speakers from companies like Udacity and Nutanix to describe their job and experiences</p>
 		</div>
 		<div class="row page page-info">
 			<div class="page-heading">The Big Picture</div>
@@ -110,6 +109,14 @@
 				Officer Team
 			</div>
 			<div class="page-subheading">2016-2017</div>
+			<ul class="page-list">
+				<li ng-repeat="officer in officers">
+					<img ng-src="{{ officer }}">
+					<div class="officer-name">{{ officer.name }}</div>
+					<div class="officer-position">{{ officer.position }}</div>
+					<div class="officer-bio">{{ officer.bio }}</div>
+				</li>
+			</ul>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/tracks.html">
@@ -128,8 +135,18 @@
   		</div>
 	</script>
 	<script type="text/ng-template" id="/blog.html">
-		<div class="row page">
-    		<h1 class="page-title">Blog</h1>
+		<div class="row page blog-page">
+    		<h1 class="page-title">
+				<p style="color: red; display: inline;">{</p>Blog<p style="color: red; display: inline;">}</p>
+			</h1>
+			<ul class="page-list">
+				<li ng-repeat="post in posts">
+					<img ng-src="{{ post.image }}">
+					<div class="post-title">{{ post.title }}</div>
+					<div class="post-time">{{ post.time }}</div>
+					<div class="post-preview">{{ post.content }}</div>
+				</li>
+			</ul>
   		</div>
 	</script>
 	<script type="text/ng-template" id="/resources.html">
