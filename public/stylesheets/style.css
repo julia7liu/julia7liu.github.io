@@ -137,7 +137,10 @@ a:hover, a:active, a:focus {
 	background: #000;
 }
 
-.page-section h3 {
+.page-section .page-heading {
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 10px;
 	color: #fff;
 }
 
@@ -209,7 +212,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-description .page-subheading {
-	font-size: 32pt;
+	font-size: 24pt;
 	text-transform: uppercase;
 	padding: 10px;
 }
