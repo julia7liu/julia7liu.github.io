@@ -1,17 +1,3 @@
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
 body {
   padding: 0px;
   font: 14px Helvetica, Arial, sans-serif;
@@ -24,6 +10,7 @@ a {
 a:hover, a:active, a:focus {
 	color: red;
 	text-decoration: none;
+	background: none;
 }
 
 .row {
@@ -43,6 +30,42 @@ a:hover, a:active, a:focus {
 .navbar a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+.navbar li a:hover, .navbar li a:active, .navbar li a:focus {
+	background: #fff;
+	margin-bottom: 0px;
+	border-bottom: 5px solid red;
+}
+
+.footer {
+	position: relative;
+	top: 75px;
+	padding: 25px 40px;
+	background: #fff;
+}
+
+.footer div {
+	display: inline-block;
+}
+
+.footer img {
+	height: 25px;
+	width: 25px;
+}
+
+.footer .brand {
+	text-transform: uppercase;
+}
+
+.footer .contact {
+	position: absolute;
+	right: 140px;
+}
+
+.footer .social {
+	float: right;
 }
 
 .col-xs-4 {
@@ -70,26 +93,34 @@ a:hover, a:active, a:focus {
 
 .page-title {
 	position: relative;
-	top: 80px;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 64pt;
 	font-family: "Courier New";
 	font-weight: bold;
 	text-transform: uppercase;
-    letter-spacing: 5px;
     color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.title-animation div {
-	animation: type 2s steps(60, end);
+.home-page .page-title {
+	border-right: .1em solid;
+	width: 11ch;
+	animation: typing 5s steps(11, end),
+	           blink-caret .5s step-end infinite alternate;
 }
 
-.title-animation div:nth-child(2){
-  animation: type2 4s steps(60, end);
+.aboutus-page .page-title {
+	border-right: .1em solid;
+	width: 9ch;
+	animation: typing 5s steps(9, end),
+	           blink-caret .5s step-end infinite alternate;
 }
 
-.title-animation span {
-	animation: blink 1s infinite;
-}
+@keyframes typing { from { width: 9px; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
 
 .page-section-title {
 	font-size: 28pt;
@@ -97,7 +128,7 @@ a:hover, a:active, a:focus {
 	font-weight: bold;
 	text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 20px;
+    padding: 20px 40px;
     color: #fff;
 }
 
@@ -112,14 +143,18 @@ a:hover, a:active, a:focus {
 	background-size: cover;
 }
 
-.page-contact {
+.page-section {
 	background: #000;
+}
+
+.page-section h3 {
+	color: #fff;
 }
 
 .home-page {
 	height: 500px;
 	text-align: center;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/desk-workspace.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/desk-workspace.jpg");
 }
 
 .aboutus-page {
@@ -150,11 +185,11 @@ a:hover, a:active, a:focus {
 	height: 100px;
 }
 
-.page-info .page-info-heading {
+.page-info .page-heading {
 	margin: 40px;
 }
 
-.page-info .page-info-heading a {
+.page-info .page-heading a {
 	padding: 10px;
 	border-bottom: 5px solid #fff;
 }
@@ -177,7 +212,7 @@ a:hover, a:active, a:focus {
 	line-height: 16pt;
 }
 
-.page-description .page-description-heading {
+.page-description .page-heading {
 	font-size: 2em;
 	text-transform: uppercase;
 	padding: 10px;
@@ -204,14 +239,14 @@ a:hover, a:active, a:focus {
 	text-align: center;
 }
 
-.page-backdrop .page-backdrop-heading {
+.page-backdrop .page-heading {
 	font-size: 2em;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 10px;
 }
 
-.page-backdrop .page-backdrop-subheading {
+.page-backdrop .page-subheading {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
