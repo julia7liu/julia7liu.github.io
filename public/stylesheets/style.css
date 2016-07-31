@@ -195,6 +195,13 @@ a:hover, a:active, a:focus {
 	color: #000;
 }
 
+.page-info .page-subheading {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #000;
+}
+
 .page-info .page-list {
 	list-style: none;
 }
@@ -215,6 +222,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info p {
+	margin-top: 40px;
 	font-size: 0.75em;
 	text-transform: none;
 	line-height: 18pt;
