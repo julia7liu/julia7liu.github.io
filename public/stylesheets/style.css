@@ -119,6 +119,13 @@ a:hover, a:active, a:focus {
 	           blink-caret .5s step-end infinite alternate;
 }
 
+.tracks-page .page-title {
+	border-right: .1em solid;
+	width: 8ch;
+	animation: typing 5s steps(8, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
 @keyframes typing { from { width: 9px; } }
 @keyframes blink-caret { 50% { border-color: transparent; } }
 
@@ -165,6 +172,11 @@ a:hover, a:active, a:focus {
 	background-image: url("../images/coding.jpg");
 }
 
+.tracks-page {
+	height: 400px;
+	background-image: url("../images/programming.jpg");
+}
+
 .page-info {
 	padding: 40px;
 	background: #fa9090;
@@ -185,7 +197,6 @@ a:hover, a:active, a:focus {
 }
 
 .page-info .page-info-icon img {
-	text
 	width: 100px;
 	height: 100px;
 }
@@ -202,10 +213,6 @@ a:hover, a:active, a:focus {
 	text-transform: uppercase;
 	padding: 10px;
 	color: #000;
-}
-
-.page-info .page-list {
-	list-style: none;
 }
 
 .page-info .number {

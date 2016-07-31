@@ -102,19 +102,8 @@
 		</div>
 		<div class="row page page-info">
 			<div class="page-heading">The Big Picture</div>
-			<div class="col-xs-6">
-				<ul class="page-list">
-					<li><div class="number">56%</div> of AP test-takers in 2015 were female</li>
-					<li><div class="number">57%</div> of professional occupations in the 2015 U.S. workforce were held by women</li>
-				</ul>
-			</div>
-			<div class="col-xs-6">
-				<ul class="page-list">
-					<li><div class="number">22%</div> of AP <p style="color: red; display: inline;">Computer Science</p> test-takers in 2015 were female</li>
-					<li><div class="number">25%</div> of professional <p style="color: red; display: inline;">computing</p> occupations in the 2015 U.S. workforce were held by women</li>
-				</ul>
-			</div>
 			<img src="public/images/infographic.png">
+			<imr src="public/images/infographic2.png">
 		</div>
 		<div class="row page page-section">
 			<div class="page-heading">
@@ -124,8 +113,18 @@
 		</div>
 	</script>
 	<script type="text/ng-template" id="/tracks.html">
-		<div class="row page">
-    		<h1 class="page-title">Tracks</h1>
+		<div class="row page tracks-page">
+    		<h1 class="page-title">
+				<p style="color: red; display: inline;">{</p>Tracks<p style="color: red; display: inline;">}</p>
+			</h1>
+			<ul class="page-list">
+				<li ng-repeat="post in posts">
+					<img ng-src="{{ post.image }}">
+					<div class="post-title">{{ post.title }}</div>
+					<div class="post-time">{{ post.time }}</div>
+					<div class="post-preview">{{ post.content }}</div>
+				</li>
+			</ul>
   		</div>
 	</script>
 	<script type="text/ng-template" id="/blog.html">
