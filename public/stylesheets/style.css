@@ -17,6 +17,11 @@ a:hover, a:active, a:focus {
 }
 
 .navbar {
+	z-index: 2;
+	position: fixed;
+	background: #fff;
+	border-radius: 0px;
+	width: 100%;
 	margin: 0px;
 	padding: 10px;
 }
@@ -33,18 +38,38 @@ a:hover, a:active, a:focus {
 	text-transform: uppercase;
 }
 
-.page-title {
-	font-size: 64pt;
-	font-family: "Georgia";
+.btn-box {
+	font-size: 1.25em;
 	text-transform: uppercase;
-    letter-spacing: 10px;
-    text-align: center;
+	letter-spacing: 2px;
+	background: none;
+	padding: 10px 30px;
+	margin: 10px;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.btn-box:hover, .btn-box:active, .btn-box:focus {
+	color: red;
+	border: 2px solid red;
+}
+
+.page-title {
+	position: relative;
+	top: 40px;
+	left: 40px;
+	font-size: 64pt;
+	font-family: "Courier New";
+	font-weight: bold;
+	text-transform: uppercase;
+    letter-spacing: 5px;
     color: #fff;
 }
 
 .page-section-title {
-	font-size: 36pt;
-	font-family: "Georgia";
+	font-size: 28pt;
+	font-family: "Courier New";
+	font-weight: bold;
 	text-transform: uppercase;
     letter-spacing: 5px;
     padding: 20px;
@@ -52,8 +77,9 @@ a:hover, a:active, a:focus {
 }
 
 .page {
+	position: relative;
+    top: 75px;
 	width: 100%;
-	height: 500px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -66,20 +92,77 @@ a:hover, a:active, a:focus {
 }
 
 .home-page {
-	background-image: url("../images/WIT-Wallpaper2.jpg");
+	height: 500px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/WIT-Wallpaper2.jpg");
 }
 
 .aboutus-page {
-	background-image: url("../images/.jpg");
+	height: 300px;
+	background-image: url("../images/coding.jpg");
 }
 
 .page-info {
-	width: 100%;
 	padding: 20px;
 	background: #fa9090;
 	letter-spacing: 2px;
 }
 
-.page-info a:hover {
-	color: #fff;
+.page-info .page-info-icon {
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: 20px solid #fff;
+	border-radius: 50%;
+}
+
+.page-info img {
+	width: 100px;
+	height: 100px;
+}
+
+.page-info .page-info-heading {
+	margin: 40px;
+}
+
+.page-info .page-info-heading a {
+	padding: 10px;
+	border-bottom: 5px solid #fff;
+}
+
+.page-info a:hover, .page-info a:active, .page-info a:focus {
+	border-bottom: 5px solid red;
+}
+
+.page-info p {
+	font-size: 0.75em;
+	text-transform: none;
+	letter-spacing: 0px;
+	line-height: 18pt;
+	margin-bottom: 20px;
+}
+
+.page-description {
+	padding: 20px;
+	background: #fff;
+	letter-spacing: 2px;
+}
+
+.page-description .page-description-heading {
+	text-align: center;
+	padding: 10px;
+}
+
+.page-backdrop {
+	padding: 20px;
+	background-image: url();
+	letter-spacing: 2px;
+}
+
+.page-backdrop .page-backdrop-heading {
+	text-align: center;
+	padding: 10px;
 }

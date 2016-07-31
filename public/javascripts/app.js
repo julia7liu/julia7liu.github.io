@@ -12,7 +12,7 @@ function($scope){
 
 }]);
 
-app.controller('EventsCtrl', [
+app.controller('BlogCtrl', [
 '$scope',
 function($scope){
 
@@ -46,10 +46,10 @@ function($stateProvider, $urlRouterProvider) {
 		templateUrl: '/aboutus.html',
 		controller: 'AboutUsCtrl'
 	})
-	.state('events', {
-		url: '/events',
-		templateUrl: '/events.html',
-		controller: 'EventsCtrl'
+	.state('blog', {
+		url: '/blog',
+		templateUrl: '/blog.html',
+		controller: 'BlogCtrl'
 	})
 	.state('tracks', {
 		url: '/tracks',

@@ -16,7 +16,7 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/#/aboutus">About Us</a></li>
-				<li><a href="/#/events">Events</a></li>
+				<li><a href="/#/blog">Blog</a></li>
 				<li><a href="/#/tracks">Tracks</a></li>
 				<li><a href="/#/resources">Resources</a></li>
 			</ul>
@@ -25,33 +25,67 @@
 	<ui-view></ui-view>
 	<script type="text/ng-template" id="/home.html">
 		<div class="row page home-page">
-			<h1 class="page-title">(Be)<h1>
-			<h1 class="page-title">{<p style="color: red; display: inline;">Wit</p>ty}</h1>
+			<h1 class="page-title">
+				(Be)<br>
+				{<p style="color: red; display: inline;">Wit</p>ty}
+			</h1>
+			<a href="/#/aboutus"><button class="btn btn-box">About Us</button></a>
+			<a href="/#/tracks"><button class="btn btn-box">Tracks</button></a>
   		</div>
-		<div class="row page-info">
-			<div class="col-xs-4"><a href="">Web</a></div>
-			<div class="col-xs-4"><a href="">iOS</a></div>
-			<div class="col-xs-4"><a href="">Intro</a></div>
+		<div class="row page page-description">
+			<div class="page-description-heading"></div>
 		</div>
-		<div class="row page-contact">
-			<h2 class="page-section-title"><p style="color: red; display: inline;">{</p>Contact Us<p style="color: red; display: inline;">}</p></h2>
+		<div class="row page page-info">
+			<div class="col-xs-4">
+				<div class="page-info-icon"><img src="images/code.svg"></div>
+				<div class="page-info-heading"><a href="">Intro</a></div>
+				<p>Have a passion for technology and want to learn how to code but just don't know where to start?
+					We have a track for beginners who want to get a jumpstart into programming languages like Java and JavaScript.
+				</p>
+			</div>
+			<div class="col-xs-4">
+				<div class="page-info-icon"><img src="images/desktop.svg"></div>
+				<div class="page-info-heading"><a href="">Web</a></div>
+				<p>Have a passion for technology and want to learn how to code but just don't know where to start?
+					We have a track for beginners who want to get a jumpstart into programming languages like Java and JavaScript.
+				</p>
+			</div>
+			<div class="col-xs-4">
+				<div class="page-info-icon"><img src="images/smartphone.svg"></div>
+				<div class="page-info-heading"><a href="">Mobile</a></div>
+				<p>Have a passion for technology and want to learn how to code but just don't know where to start?
+					We have a track for beginners who want to get a jumpstart into programming languages like Java and JavaScript.
+				</p>
+			</div>
+		</div>
+		<div class="row page page-backdrop">
+			<div class="page-backdrop-heading"></div>
+		</div>
+		<div class="row page page-contact">
+			<h2 class="page-section-title">
+				<p style="color: red; display: inline;">{</p>Contact Us<p style="color: red; display: inline;">}</p>
+			</h2>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/aboutus.html">
 		<div class="row page aboutus-page">
-    		<h1 class="page-title">Welcome</h1>
+    		<h1 class="page-title">
+				<p style="color: red; display: inline;">{</p>
+				Welcome
+				<p style="color: red; display: inline;">}</p>
+			</h1>
   		</div>
 		<div class="row">
 			
 		</div>
 	</script>
-	<script type="text/ng-template" id="/events.html">
-		<div class="page-header">
-    		<h1 class="page-title">Events</h1>
+	<script type="text/ng-template" id="/blog.html">
+		<div class="row page">
+    		<h1 class="page-title">Blog</h1>
   		</div>
 	</script>
 	<script type="text/ng-template" id="/tracks.html">
-		<div class="page-header">
+		<div class="row page">
     		<h1 class="page-title">Tracks</h1>
   		</div>
 	</script>
@@ -59,6 +93,13 @@
 		<div class="page-header">
     		<h1 class="page-title">Resources</h1>
   		</div>
+		<div class="row page">
+			<div>Icons made by
+				<a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+				<a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+				<a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
+		</div>
 	</script>
   </body>
 </html>
