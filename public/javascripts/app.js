@@ -12,12 +12,12 @@ function($scope){
 	$scope.officers = [
 	                   {name: "Sam Par", position: "Co-President", image: "", bio: ""},
 	                   {name: "Anika Bagga", position: "Co-President", image: "", bio: ""},
-	                   {name: "Pallavi Narayanan", position: "", image: "", bio: ""},
-	                   {name: "Rucha Patki", position: "", image: "", bio: ""},
-	                   {name: "Vicky Min", position: "", image: "", bio: ""},
-	                   {name: "Julia Liu", position: "", image: "", bio: ""},
-	                   {name: "Christina Shao", position: "", image: "", bio: ""},
-	                   {name: "Nithya Attaluri", position: "", image: "", bio: ""}
+	                   {name: "Pallavi Narayanan", position: "Outreach Director", image: "", bio: ""},
+	                   {name: "Vicky Min", position: "Outreach Director", image: "", bio: ""},
+	                   {name: "Rucha Patki", position: "Secretary/Treasurer", image: "", bio: ""},
+	                   {name: "Julia Liu", position: "Public Relations", image: "", bio: ""},
+	                   {name: "Christina Shao", position: "Student Mentor", image: "", bio: ""},
+	                   {name: "Nithya Attaluri", position: "Student Mentor", image: "", bio: ""}
 	                   ];
 }]);
 
