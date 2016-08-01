@@ -291,10 +291,15 @@ a:hover, a:active, a:focus {
 	padding: 10px;
 }
 
+.page-description .page-subheading {
+	color: red;
+	font-size: 1.25em;
+}
+
 .page-subsection {
 	position: relative;
     top: 75px;
-	height: 200px;
+	height: 250px;
 	margin: 20px 0px;
 	padding: 10px;
 	color: #fff;
@@ -317,7 +322,7 @@ a:hover, a:active, a:focus {
 .page-subsection.engage {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/technovation.jpg");
 	background-repeat: no-repeat;
-	background-position: 0% 75%;
+	background-position: 0% 50%;
 	background-size: 100%;
 }
 
@@ -332,6 +337,11 @@ a:hover, a:active, a:focus {
 	text-transform: uppercase;
 	padding: 20px;
 	margin-bottom: 0px;
+}
+
+.page-subsection p {
+	font-size: 1.25em;
+	padding: 20px;
 }
 
 .page-description p {
