@@ -415,12 +415,13 @@ a:hover, a:active, a:focus {
 .blogs .page-list .post-title {
 	font-size: 2em;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 20px 0px 0px 0px;
 }
 
 .blogs .page-list .post-time {
 	font-size: 1.25em;
 	color: red;
+	padding: 10px;
 }
 
 .blogs .page-list .post-preview {
