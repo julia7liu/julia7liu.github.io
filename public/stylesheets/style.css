@@ -151,21 +151,20 @@ a:hover, a:active, a:focus {
 .page-section {
 	padding: 40px;
 	letter-spacing: 2px;
-	background: #000;
+	background: #fff;
+	color: #000;
 }
 
 .page-section .page-heading {
 	font-size: 2em;
 	text-transform: uppercase;
 	padding: 10px;
-	color: #fff;
 }
 
 .page-section .page-subheading {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	padding: 10px;
-	color: #fff;
 }
 
 .page-list {
@@ -173,7 +172,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-section .page-list {
-	color: #fff;
+	color: #000;
 }
 
 .page-section .page-list li {
