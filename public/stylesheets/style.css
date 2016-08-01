@@ -385,3 +385,12 @@ a:hover, a:active, a:focus {
 	color: #fff;
 	padding: 10px;
 }
+
+.blogs {
+	position: relative;
+	top: 75px;
+}
+
+.blogs .page-list {
+	
+}
