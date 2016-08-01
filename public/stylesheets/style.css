@@ -176,6 +176,10 @@ a:hover, a:active, a:focus {
 	color: #fff;
 }
 
+.page-section .page-list li {
+	display: inline;
+}
+
 .page-section .page-list img {
 	width: 150px;
 	height: 150px;
@@ -287,8 +291,10 @@ a:hover, a:active, a:focus {
 
 .page-description .page-heading {
 	font-size: 2em;
+	color: #000;
 	text-transform: uppercase;
 	padding: 10px;
+	line-height: 2em;
 }
 
 .page-description .page-subheading {
@@ -300,7 +306,7 @@ a:hover, a:active, a:focus {
 	position: relative;
     top: 75px;
 	height: 250px;
-	margin: 20px 0px;
+	margin: 20px 0px 0px 0px;
 	padding: 10px;
 	color: #fff;
 	text-align: center;
