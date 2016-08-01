@@ -393,3 +393,7 @@ a:hover, a:active, a:focus {
 .blogs .page-list {
 	
 }
+
+.blogs .page-list img {
+	width: 400px;
+}

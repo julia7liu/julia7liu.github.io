@@ -158,17 +158,17 @@
     		<h1 class="page-title">
 				<p style="color: red; display: inline;">{</p>Blog<p style="color: red; display: inline;">}</p>
 			</h1>
-			<div class="row page blogs">
-				<ul class="page-list">
-					<li ng-repeat="post in posts">
-						<img ng-src="{{ post.image }}">
-						<div class="post-title">{{ post.title }}</div>
-						<div class="post-time">{{ post.time }}</div>
-						<div class="post-preview">{{ post.content }}</div>
-					</li>
-				</ul>
-			</div>
   		</div>
+		<div class="row page blogs">
+			<ul class="page-list">
+				<li ng-repeat="post in posts">
+					<img ng-src="{{ post.image }}">
+					<div class="post-title">{{ post.title }}</div>
+					<div class="post-time">{{ post.time }}</div>
+					<div class="post-preview">{{ post.content }}</div>
+				</li>
+			</ul>
+		</div>
 	</script>
 	<script type="text/ng-template" id="/resources.html">
 		<div class="row page">
