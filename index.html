@@ -152,7 +152,7 @@
 					<li><a ng-click="changeView('Mobile')">Mobile</a></li>
 				</ul>
 			</nav>
-			<ng-include src="template"></ng-include>
+			<ng-include class="tracks" src="template"></ng-include>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/tracks/intro.html">
@@ -198,11 +198,12 @@
 		<div class="row page page-description">
 			<div class="page-heading">Mobile Development Track</div>
 			<div class="page-subheading">Teachers: Anika, Rucha</div>
-			<p>There are 2.2 million apps on Android's app store and 2 million on Apple's. Needless to say,
-				mobile apps are becoming popular for their simplicity and life-changing features. Though iOS apps
-				can be created using a variety of languages such as Swift, C, and C++, Android apps mainly use Java.
-				Our Mobile Development course allows members to dive into the world of iOS and Android app creation
-				by learning the Swift and Java programming languages.</p>
+			<p>There are currently 2.2 million apps on Android's app store and 2 million on Apple's. Needless to say,
+				mobile apps are becoming increasingly popular for their simplicity and life-changing features.
+				Though iOS apps can be created using a variety of languages such as Swift, C, and C++,
+				Android apps mainly use Java. However, our Mobile Development course will primarily focus on teaching
+				the Swift and Java programming languages, allowing members to dive headfirst into the
+				world of iOS and Android app creation.</p>
 		</div>
 		<ul class="page-list">
 			<li ng-repeat="post in posts">

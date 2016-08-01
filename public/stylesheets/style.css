@@ -299,6 +299,7 @@ a:hover, a:active, a:focus {
 .page-description .page-subheading {
 	color: red;
 	font-size: 1.25em;
+	padding: 10px;
 }
 
 .page-subsection {
@@ -442,4 +443,9 @@ a:hover, a:active, a:focus {
 	margin-right: 0px;
 	border-right: 5px solid red;
 	border-bottom: 0px;
+}
+
+.tracks {
+	position: relative;
+    top: -440px;
 }
