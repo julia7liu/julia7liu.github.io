@@ -298,13 +298,26 @@ a:hover, a:active, a:focus {
 }
 
 .page-description .page-subsection {
-	background: #eee;
 	margin: 20px 0px;
+	padding: 10px;
+}
+
+.page-description .page-subsection.teach {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/classroom.jpg");
+}
+
+.page-description .page-subsection.engage {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/technovation.jpg");
+}
+
+.page-description .page-subsection.inspire {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/speaker.jpg");
 }
 
 .page-description .page-subsection h3 {
 	text-transform: uppercase;
 	padding: 20px;
+	margin-bottom: 0px;
 	color: #000;
 }
 
