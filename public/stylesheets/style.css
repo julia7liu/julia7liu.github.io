@@ -269,9 +269,17 @@ a:hover, a:active, a:focus {
 	padding: 10px;
 }
 
-.page-description .info {
-	font-size: 1em;
-	
+.page-description .page-subsection {
+	background: #eee;
+	margin: 20px 0px;
+}
+
+.page-description .page-subsection h3 {
+	color: #000;
+}
+
+.page-description p {
+	width: 75%;
 }
 
 .page-description button {
