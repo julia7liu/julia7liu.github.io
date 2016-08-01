@@ -220,6 +220,11 @@ a:hover, a:active, a:focus {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/blog.jpg");
 }
 
+.resources-page {
+	height: 250px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/blog.jpg");
+}
+
 .page-info {
 	padding: 40px;
 	background: #fa9090;
@@ -275,7 +280,7 @@ a:hover, a:active, a:focus {
 
 .page-info p {
 	margin-top: 20px;
-	font-size: 0.75em;
+	font-size: 0.65em;
 	text-transform: none;
 	line-height: 16pt;
 }
