@@ -419,3 +419,7 @@ a:hover, a:active, a:focus {
 .blogs .page-list .post-preview {
 	text-overflow: ellipsis;
 }
+
+.navbar.sidebar {
+	display: block;
+}
