@@ -10,14 +10,14 @@ app.controller('AboutUsCtrl', [
 '$scope',
 function($scope){
 	$scope.officers = [
-	                   {name: "Sam Par", position: "Co-President"},
-	                   {name: "Anika Bagga", position: "Co-President"},
-	                   {name: "Pallavi Narayanan"},
-	                   {name: "Rucha Patki"},
-	                   {name: "Vicky Min"},
-	                   {name: "Julia Liu"},
-	                   {name: "Christina Shao"},
-	                   {name: "Nithya Attaluri"}
+	                   {name: "Sam Par", position: "Co-President", image: "", bio: ""},
+	                   {name: "Anika Bagga", position: "Co-President", image: "", bio: ""},
+	                   {name: "Pallavi Narayanan", position: "", image: "", bio: ""},
+	                   {name: "Rucha Patki", position: "", image: "", bio: ""},
+	                   {name: "Vicky Min", position: "", image: "", bio: ""},
+	                   {name: "Julia Liu", position: "", image: "", bio: ""},
+	                   {name: "Christina Shao", position: "", image: "", bio: ""},
+	                   {name: "Nithya Attaluri", position: "", image: "", bio: ""}
 	                   ];
 }]);
 

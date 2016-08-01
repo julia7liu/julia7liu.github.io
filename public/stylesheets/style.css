@@ -168,6 +168,34 @@ a:hover, a:active, a:focus {
 	color: #fff;
 }
 
+.page-list {
+	list-style: none;
+}
+
+.page-section .page-list {
+	color: #fff;
+}
+
+.page-section .page-list img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.page-section .officer-name {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.page-section .officer-position {
+	font-size: 1.25em;
+}
+
+.page-section .officer-bio {
+	line-height: 16pt;
+}
+
 .home-page {
 	height: 500px;
 	text-align: center;
@@ -275,11 +303,15 @@ a:hover, a:active, a:focus {
 }
 
 .page-description .page-subsection h3 {
+	text-transform: uppercase;
+	padding: 20px;
 	color: #000;
 }
 
 .page-description p {
 	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-description button {
