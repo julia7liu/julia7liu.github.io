@@ -292,6 +292,8 @@ a:hover, a:active, a:focus {
 }
 
 .page-subsection {
+	position: relative;
+    top: 75px;
 	height: 200px;
 	margin: 20px 0px;
 	padding: 10px;
