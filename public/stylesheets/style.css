@@ -388,6 +388,7 @@ a:hover, a:active, a:focus {
 
 .blogs {
 	padding: 40px;
+	color: #fff;
 }
 
 .blogs .page-list img {
@@ -401,7 +402,7 @@ a:hover, a:active, a:focus {
 
 .blogs .page-list .post-time {
 	font-size: 1.25em;
-	color: #333;
+	color: red;
 }
 
 .blogs .page-list .post-preview {

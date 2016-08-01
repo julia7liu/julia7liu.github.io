@@ -35,9 +35,9 @@ app.controller('BlogCtrl', [
 '$scope',
 function($scope){
 	$scope.posts = [
-	                {name: "First Day Of School", image: "public/images/back-to-school.jpeg", caption: "Goodbye to summer, hello to school", content: "The beginning of summer break seemed like it was just yesterday; students are immediately swept into the incoming workload and stress of the new school year at Cupertino High School. However, back to school means Tino WIT is up and running once again! Stay tuned for more announcements regarding Clubs Day and our first club meeting.", time: ""},
-	                {name: ""},
-	                {name: ""},
+	                {title: "First Day Of School", image: "public/images/back-to-school.jpeg", time: "August 15, 2016", content: "The beginning of summer break seemed like it was just yesterday; students are immediately swept into the incoming workload and stress of the new school year at Cupertino High School. However, back to school means Tino WIT is up and running once again! Stay tuned for more announcements regarding Clubs Day and our first club meeting.", time: ""},
+	                {title: ""},
+	                {title: ""},
 	                ];
 }]);
 
