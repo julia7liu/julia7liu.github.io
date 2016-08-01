@@ -394,6 +394,7 @@ a:hover, a:active, a:focus {
 
 .blogs .page-list li {
 	padding: 20px;
+	margin: 0px 0px 20px 0px;
 	width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -422,4 +423,19 @@ a:hover, a:active, a:focus {
 
 .navbar.sidebar {
 	display: block;
+	position: relative;
+	width: 20%;
+}
+
+.navbar.sidebar li {
+	height: 100px;
+}
+
+.navbar.sidebar a {
+	margin-right: 5px;
+}
+
+.navbar.sidebar li a:hover, .navbar.sidebar li a:active, .navbar.sidebar li a:focus {
+	margin-right: 0px;
+	border-right: 5px solid red;
 }

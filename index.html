@@ -147,9 +147,9 @@
 		<div class="row page">
 			<nav class="navbar sidebar">
 				<ul class="nav navbar-nav">
-					<li><a href="/#/intro">Intro</a></li>
-					<li><a href="/#/web">Web</a></li>
-					<li><a href="/#/mobile">Mobile</a></li>
+					<li><a ng-click="changeView('Intro')">Intro</a></li>
+					<li><a ng-click="changeView('Web')">Web</a></li>
+					<li><a ng-click="changeView('Mobile')">Mobile</a></li>
 				</ul>
 			</nav>
 			<ng-include src="template"></ng-include>

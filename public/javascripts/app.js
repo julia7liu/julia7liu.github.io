@@ -24,6 +24,18 @@ function($scope){
 app.controller('TracksCtrl', [
 '$scope',
 function($scope){
+	$scope.template = "";
+	$scope.changeView = function(view) {
+		if(view == "Intro") {
+			$scope.template = "/tracks/intro.html";
+		}
+		if(view == "Web") {
+			$scope.template = "/tracks/web.html";
+		}
+		if(view == "Mobile") {
+			$scope.template = "/tracks/mobile.html";
+		}
+	}
 	$scope.posts = [
 	                {name: ""},
 	                {name: ""},
