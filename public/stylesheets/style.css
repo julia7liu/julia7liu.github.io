@@ -133,6 +133,13 @@ a:hover, a:active, a:focus {
 	           blink-caret .5s step-end infinite alternate;
 }
 
+.resources-page .page-title {
+	border-right: .1em solid;
+	width: 11ch;
+	animation: typing 5s steps(11, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
 @keyframes typing { from { width: 9px; } }
 @keyframes blink-caret { 50% { border-color: transparent; } }
 
