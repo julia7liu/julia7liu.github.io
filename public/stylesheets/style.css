@@ -425,6 +425,7 @@ a:hover, a:active, a:focus {
 .navbar.sidebar {
 	display: block;
 	position: relative;
+	margin-top: 40px;
 	width: 15%;
 }
 
@@ -447,5 +448,10 @@ a:hover, a:active, a:focus {
 
 .tracks {
 	position: relative;
-    top: -440px;
+    top: -437px;
+}
+
+.tracks .page {
+	width: 85%;
+    left: 15%;
 }
