@@ -24,7 +24,7 @@ function($scope){
 app.controller('TracksCtrl', [
 '$scope',
 function($scope){
-	$scope.template = "";
+	$scope.template = "/tracks/intro.html";
 	$scope.changeView = function(view) {
 		if(view == "Intro") {
 			$scope.template = "/tracks/intro.html";
