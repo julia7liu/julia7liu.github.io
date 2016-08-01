@@ -300,18 +300,27 @@ a:hover, a:active, a:focus {
 .page-description .page-subsection {
 	margin: 20px 0px;
 	padding: 10px;
+	color: #fff;
 }
 
 .page-description .page-subsection.teach {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/classroom.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 75%;
+	background-size: 100%;
 }
 
 .page-description .page-subsection.engage {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/technovation.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .page-description .page-subsection.inspire {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/speaker.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/public-speaking.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 25%;
+	background-size: 100%;
 }
 
 .page-description .page-subsection h3 {
