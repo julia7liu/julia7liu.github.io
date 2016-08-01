@@ -298,9 +298,14 @@ a:hover, a:active, a:focus {
 }
 
 .page-description .page-subsection {
+	height: 200px;
 	margin: 20px 0px;
 	padding: 10px;
 	color: #fff;
+}
+
+.page-description .page-subsection span.glyphicon {
+	font-size: x-large;
 }
 
 .page-description .page-subsection.teach {
@@ -313,13 +318,14 @@ a:hover, a:active, a:focus {
 .page-description .page-subsection.engage {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/technovation.jpg");
 	background-repeat: no-repeat;
+	background-position: 0% 75%;
 	background-size: 100%;
 }
 
 .page-description .page-subsection.inspire {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/public-speaking.jpg");
 	background-repeat: no-repeat;
-	background-position: 0% 25%;
+	background-position: 0% 75%;
 	background-size: 100%;
 }
 
@@ -327,7 +333,6 @@ a:hover, a:active, a:focus {
 	text-transform: uppercase;
 	padding: 20px;
 	margin-bottom: 0px;
-	color: #000;
 }
 
 .page-description p {
