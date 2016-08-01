@@ -388,16 +388,27 @@ a:hover, a:active, a:focus {
 
 .blogs {
 	padding: 40px;
-	color: #fff;
+	color: #000;
+	letter-spacing: 2px;
+}
+
+.blogs .page-list li {
+	padding: 20px;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #eee;
+    border-radius: 20px;
 }
 
 .blogs .page-list img {
-	width: 400px;
+	width: 100%;
 }
 
 .blogs .page-list .post-title {
 	font-size: 2em;
 	text-transform: uppercase;
+	padding: 20px;
 }
 
 .blogs .page-list .post-time {
@@ -406,6 +417,5 @@ a:hover, a:active, a:focus {
 }
 
 .blogs .page-list .post-preview {
-	height: 2em;
 	text-overflow: ellipsis;
 }
