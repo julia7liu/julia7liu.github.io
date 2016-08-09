@@ -205,6 +205,9 @@ a:hover, a:active, a:focus {
 
 .page-section .officer-bio {
 	line-height: 16pt;
+	padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
 }
 
 .home-page {
