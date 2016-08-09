@@ -11,9 +11,9 @@ app.controller('AboutUsCtrl', [
 function($scope){
 	$scope.officers = [
 	                   {name: "Sam Pal", position: "Co-President", image: "public/images/sam-pal.jpg", bio: "Hey fellow WIT!!! I'll be your co-president in charge of outreach this year and will do my way to reach out (heh) to provide you with rewarding and empowering experiences in tech. I've been involved in WIT for 2 years, and plan to continue for many more. Admittedly, I'm an avid binge watcher, food enthusiast, and insomniac. Nevertheless, I'm looking forward to a great year and ultimate progress in breaking the glass ceiling and bringing the gender gap in tech!"},
-	                   {name: "Anika Bagga", position: "Co-President", image: "", bio: ""},
-	                   {name: "Pallavi Narayanan", position: "Outreach Director", image: "", bio: ""},
-	                   {name: "Vicky Min", position: "Outreach Director", image: "", bio: ""},
+	                   {name: "Anika Bagga", position: "Co-President", image: "public/images/anika-bagga.jpg", bio: ""},
+	                   {name: "Pallavi Narayanan", position: "Outreach Director", image: "public/images/pallavi-narayanan.jpg", bio: ""},
+	                   {name: "Vicky Min", position: "Outreach Director", image: "public/images/vicky-min.jpg", bio: ""},
 	                   {name: "Rucha Patki", position: "Secretary/Treasurer", image: "public/images/rucha-patki.jpg", bio: "Hi, I'm Rucha and I'll be WIT's Secretary and Treasurer this year! I'll be managing the clubs activities and expenses. I've been with this club since its first year, and I love how it encourages more women to be involved in the field of computer science! Outside of this club, my hobbies include springboard and platform diving, robotics, and drawing."},
 	                   {name: "Julia Liu", position: "Public Relations", image: "public/images/julia-liu.JPG", bio: ""},
 	                   {name: "Christina Shao", position: "Student Mentor", image: "public/images/christina-shao.jpg", bio: "I’m a sophomore at Tino and Student Mentor of the Women in Tech club. During club meetings, I help and support members of our club. Motivated by my passion for computer science and love for programming, I hope to spark an interest for computer science in girls and close the gender gap. Outside of school, I enjoy playing basketball and badminton, hiking, volunteering, sketching animals, and reading novels. But most of all, I love having fun, spending time with my friends and family, and helping others."},
@@ -56,6 +56,12 @@ function($scope){
 
 }]);
 
+app.controller('LoginCtrl', [
+'$scope',
+function($scope){
+
+}]);
+
 app.config([
 '$stateProvider',
 '$urlRouterProvider',
@@ -86,6 +92,11 @@ function($stateProvider, $urlRouterProvider) {
 		url: '/resources',
 		templateUrl: '/resources.html',
 		controller: 'ResourcesCtrl'
+	})
+	.state('login', {
+		url: '/login',
+		templateUrl: '/login.html',
+		controller: 'LoginCtrl'
 	});
 
 	$urlRouterProvider.otherwise('home');

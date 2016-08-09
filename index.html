@@ -129,14 +129,26 @@
 				Officer Team
 			</div>
 			<div class="page-subheading">2016-2017</div>
-			<ul class="page-list">
-				<li ng-repeat="officer in officers">
-					<img ng-src="{{ officer.image }}">
-					<div class="officer-name">{{ officer.name }}</div>
-					<div class="officer-position">{{ officer.position }}</div>
-					<div class="officer-bio">{{ officer.bio }}</div>
-				</li>
-			</ul>
+			<div class="col">
+				<ul class="page-list">
+					<li ng-repeat="officer in officers" ng-if="$index < (officers.length / 2)">
+						<img ng-src="{{ officer.image }}">
+						<div class="officer-name">{{ officer.name }}</div>
+						<div class="officer-position">{{ officer.position }}</div>
+						<div class="officer-bio">{{ officer.bio }}</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="page-list">
+					<li ng-repeat="officer in officers" ng-if="$index >= (officers.length / 2)">
+						<img ng-src="{{ officer.image }}">
+						<div class="officer-name">{{ officer.name }}</div>
+						<div class="officer-position">{{ officer.position }}</div>
+						<div class="officer-bio">{{ officer.bio }}</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</script>
 	<script type="text/ng-template" id="/tracks.html">
@@ -248,6 +260,16 @@
 				<a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
 				<a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
 			</div>
+		</div>
+	</script>
+	<script type="text/ng-template" id="/login.html">
+		<div class="row page login-page">
+    		<h1 class="page-title">
+				<p style="color: red; display: inline;">{</p>Login<p style="color: red; display: inline;">}</p>
+			</h1>
+  		</div>
+		<div class="row page">
+			
 		</div>
 	</script>
   </body>
