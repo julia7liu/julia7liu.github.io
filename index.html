@@ -13,7 +13,7 @@
   	<nav class="navbar">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="/#/home" class="navbar-brand"><span class="glyphicon glyphicon-home"></span> Tino <p style="color: red; display: inline;"><</p>WIT<p style="color: red; display: inline;">></p></a>
+				<a id="header-tab home-tab active" ng-click="go('home')" class="navbar-brand"><span class="glyphicon glyphicon-home"></span> Tino <p style="color: red; display: inline;"><</p>WIT<p style="color: red; display: inline;">></p></a>
 			</div>
 			<ul class="header-navbar nav navbar-nav navbar-right">
 				<li id="header-tab aboutus-tab"><a ng-click="go('about-us')">About Us</a></li>
@@ -160,7 +160,7 @@
 		<div class="row page">
 			<nav class="navbar sidebar">
 				<ul class="nav navbar-nav">
-					<li id="sidebar-tab intro-tab"><a ng-click="changeView('Intro')">Intro</a></li>
+					<li id="sidebar-tab intro-tab active"><a ng-click="changeView('Intro')">Intro</a></li>
 					<li id="sidebar-tab web-tab"><a ng-click="changeView('Web')">Web</a></li>
 					<li id="sidebar-tab mobile-tab"><a ng-click="changeView('Mobile')">Mobile</a></li>
 				</ul>

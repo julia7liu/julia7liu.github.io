@@ -6,7 +6,10 @@ app.controller('MainCtrl', [
 function($scope, $state){
 	$scope.go = function(option) {
 		$('#header-tab').removeClass("active");
-		if(option == "about-us") {
+		if(option == "home") {
+			$state.go("home");
+			$('#home-tab').addClass("active");
+		} else if(option == "about-us") {
 			$state.go("aboutus");
 			$('#aboutus-tab').addClass("active");
 		} else if(option == "tracks") {

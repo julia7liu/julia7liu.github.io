@@ -33,7 +33,7 @@ a:hover, a:active, a:focus {
 	margin-bottom: 5px;
 }
 
-.header-navbar #header-tab.active, .header-navbar #header-tab:hover {
+.navbar #header-tab.active, .navbar #header-tab:hover {
 	cursor: pointer;
 	background: #fff;
 	margin-bottom: 0px;
