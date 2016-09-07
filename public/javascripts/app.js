@@ -5,7 +5,7 @@ app.controller('MainCtrl', [
 '$state',
 function($scope, $state){
 	$scope.go = function(option) {
-		$('#header-tab').removeClass("active");
+		$('.header-tab').removeClass("active");
 		if(option == "home") {
 			$state.go("home");
 			$('#home-tab').addClass("active");
@@ -48,7 +48,7 @@ app.controller('TracksCtrl', [
 function($scope){
 	$scope.template = "/tracks/intro.html";
 	$scope.changeView = function(view) {
-		$('#sidebar-tab').removeClass("active");
+		$('.sidebar-tab').removeClass("active");
 		if(view == "Intro") {
 			$scope.template = "/tracks/intro.html";
 			$('#intro-tab').addClass("active");
