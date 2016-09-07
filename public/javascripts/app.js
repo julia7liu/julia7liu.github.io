@@ -4,7 +4,7 @@ app.controller('MainCtrl', [
 '$scope',
 '$state',
 function($scope, $state){
-	$scope.go(option) {
+	$scope.go = function(option) {
 		$('#header-tab').removeClass("active");
 		if(option == "about-us") {
 			$state.go("aboutus");
