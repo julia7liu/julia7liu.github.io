@@ -27,7 +27,7 @@ a:hover, a:active, a:focus {
 	padding: 10px;
 }
 
-.navbar a {
+.navbar .header-tab {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 5px;
@@ -447,18 +447,15 @@ a:hover, a:active, a:focus {
 	width: 15%;
 }
 
-.navbar.sidebar li {
-	height: 100px;
+.navbar.sidebar .sidebar-tab {
 	width: 100%;
-}
-
-.navbar.sidebar a {
 	margin-right: 5px;
-	margin-bottom: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	cursor: pointer;
 }
 
-.navbar.sidebar .nav .sidebar-tab.active, .navbar.sidebar .nav .sidebar-tab:hover {
+.navbar.sidebar .sidebar-tab.active, .navbar.sidebar .sidebar-tab:hover {
 	cursor: pointer;
 	margin-right: 0px;
 	border-right: 5px solid red;
