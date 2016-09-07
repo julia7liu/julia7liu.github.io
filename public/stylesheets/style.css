@@ -29,17 +29,21 @@ a:hover, a:active, a:focus {
 
 .navbar .navbar-header {
 	position: relative;
-	top: 20px;
+	top: -10px;
 	font-size: 1.5em;
 	padding: 15px;
 }
 
 .navbar .header-tab {
 	position: relative;
-	top: 11px;
+	top: 12px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 5px;
+}
+
+.navbar .header-tab:hover {
+	cursor: pointer;
 }
 
 .navbar .header-tab.active {
@@ -97,7 +101,6 @@ a:hover, a:active, a:focus {
 }
 
 .btn-box:hover, .btn-box:active, .btn-box:focus {
-	color: red;
 	border: 3px solid red;
 }
 
@@ -457,6 +460,8 @@ a:hover, a:active, a:focus {
 }
 
 .navbar.sidebar .sidebar-tab {
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	width: 100%;
 	margin-right: 5px;
 	margin-top: 30px;
