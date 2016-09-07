@@ -2,8 +2,27 @@ var app = angular.module('tinoWIT', ['ui.router']);
 
 app.controller('MainCtrl', [
 '$scope',
-function($scope){
-	
+'$state',
+function($scope, $state){
+	$scope.go(option) {
+		$('#header-tab').removeClass("active");
+		if(option == "about-us") {
+			$state.go("aboutus");
+			$('#aboutus-tab').addClass("active");
+		} else if(option == "tracks") {
+			$state.go("tracks");
+			$('#tracks-tab').addClass("active");
+		} else if(option == "blog") {
+			$state.go("blog");
+			$('#blog-tab').addClass("active");
+		} else if(option == "resources") {
+			$state.go("resources");
+			$('#resources-tab').addClass("active");
+		} else if(option == "login") {
+			$state.go("login");
+			$('#login-tab').addClass("active");
+		}
+	}
 }]);
 
 app.controller('AboutUsCtrl', [
@@ -26,14 +45,18 @@ app.controller('TracksCtrl', [
 function($scope){
 	$scope.template = "/tracks/intro.html";
 	$scope.changeView = function(view) {
+		$('#sidebar-tab').removeClass("active");
 		if(view == "Intro") {
 			$scope.template = "/tracks/intro.html";
+			$('#intro-tab').addClass("active");
 		}
 		if(view == "Web") {
 			$scope.template = "/tracks/web.html";
+			$('#web-tab').addClass("active");
 		}
 		if(view == "Mobile") {
 			$scope.template = "/tracks/mobile.html";
+			$('#mobile-tab').addClass("active");
 		}
 	}
 	$scope.posts = [
