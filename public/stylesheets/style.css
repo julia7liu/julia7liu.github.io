@@ -17,7 +17,7 @@ a:hover, a:active, a:focus {
 	margin: 0px;
 }
 
-.navbar {
+.navbar.header {
 	z-index: 2;
 	position: fixed;
 	background: #fff;
@@ -300,6 +300,7 @@ a:hover, a:active, a:focus {
 }
 
 .page-info .page-subheading a:hover, .page-info .page-subheading a:active, .page-info .page-subheading a:focus {
+	cursor: pointer;
 	border-bottom: 5px solid red;
 }
 

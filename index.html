@@ -10,10 +10,10 @@
     <script src="public/javascripts/app.js"></script>
   </head>
   <body ng-app="tinoWIT" ng-controller="MainCtrl">
-  	<nav class="navbar">
+  	<nav class="navbar header">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="header-tab" id="home-tab active" ng-click="go('home')" class="navbar-brand"><span class="glyphicon glyphicon-home"></span> Tino <p style="color: red; display: inline;"><</p>WIT<p style="color: red; display: inline;">></p></a>
+				<a class="header-tab active" id="home-tab" ng-click="go('home')" class="navbar-brand"><span class="glyphicon glyphicon-home"></span> Tino <p style="color: red; display: inline;"><</p>WIT<p style="color: red; display: inline;">></p></a>
 			</div>
 			<ul class="header-navbar nav navbar-nav navbar-right">
 				<li class="header-tab" id="aboutus-tab"><a ng-click="go('about-us')">About Us</a></li>
@@ -160,7 +160,7 @@
 		<div class="row page">
 			<nav class="navbar sidebar">
 				<ul class="nav navbar-nav">
-					<li class="sidebar-tab" id="intro-tab active"><a ng-click="changeView('Intro')">Intro</a></li>
+					<li class="sidebar-tab active" id="intro-tab"><a ng-click="changeView('Intro')">Intro</a></li>
 					<li class="sidebar-tab" id="web-tab"><a ng-click="changeView('Web')">Web</a></li>
 					<li class="sidebar-tab" id="mobile-tab"><a ng-click="changeView('Mobile')">Mobile</a></li>
 				</ul>
