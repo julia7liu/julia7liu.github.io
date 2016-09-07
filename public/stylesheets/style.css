@@ -33,7 +33,8 @@ a:hover, a:active, a:focus {
 	margin-bottom: 5px;
 }
 
-.navbar #header-tab.active {
+.navbar #header-tab.active, .navbar #header-tab:hover {
+	cursor: pointer;
 	background: #fff;
 	margin-bottom: 0px;
 	border-bottom: 5px solid red;
@@ -457,7 +458,8 @@ a:hover, a:active, a:focus {
 	cursor: pointer;
 }
 
-.navbar.sidebar #sidebar-tab.active {
+.navbar.sidebar #sidebar-tab.active, .navbar.sidebar #sidebar-tab:hover {
+	cursor: pointer;
 	margin-right: 0px;
 	border-right: 5px solid red;
 	border-bottom: 0px;
