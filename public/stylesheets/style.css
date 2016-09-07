@@ -101,6 +101,7 @@ a:hover, a:active, a:focus {
 }
 
 .btn-box:hover, .btn-box:active, .btn-box:focus {
+	color: red;
 	border: 3px solid red;
 }
 

@@ -26,11 +26,7 @@ function($scope, $state){
 			$('#login-tab').addClass("active");
 		}
 	}
-}]);
-
-app.controller('AboutUsCtrl', [
-'$scope',
-function($scope){
+	
 	$scope.officers = [
 	                   {name: "Sam Pal", position: "Co-President", image: "public/images/sam-pal.jpg", bio: "Hey fellow WIT!!! I'll be your co-president in charge of outreach this year and will do my way to reach out (heh) to provide you with rewarding and empowering experiences in tech. I've been involved in WIT for 2 years, and plan to continue for many more. Admittedly, I'm an avid binge watcher, food enthusiast, and insomniac. Nevertheless, I'm looking forward to a great year and ultimate progress in breaking the glass ceiling and bringing the gender gap in tech!"},
 	                   {name: "Anika Bagga", position: "Co-President", image: "public/images/anika-bagga.jpg", bio: ""},
@@ -41,11 +37,7 @@ function($scope){
 	                   {name: "Christina Shao", position: "Student Mentor", image: "public/images/christina-shao.jpg", bio: "I’m a sophomore at Tino and Student Mentor of the Women in Tech club. During club meetings, I help and support members of our club. Motivated by my passion for computer science and love for programming, I hope to spark an interest for computer science in girls and close the gender gap. Outside of school, I enjoy playing basketball and badminton, hiking, volunteering, sketching animals, and reading novels. But most of all, I love having fun, spending time with my friends and family, and helping others."},
 	                   {name: "Nithya Attaluri", position: "Student Mentor", image: "public/images/nithya-attaluri.JPG", bio: "Hey! My name is Nithya Attaluri, and I will be one of your Student Mentors for 2016-2017 academic year! With my friend and co-officer Christina Shao, I will be designing the lesson plans for our meetings. I love to code, and by the end of the year, I hope many of the WIT members will too. When I’m not coding, though, I can be seen listening to music, (re)reading a novel, or playing table tennis with my brother. I'm looking forward to meeting all of you at WIT!"}
 	                   ];
-}]);
 
-app.controller('TracksCtrl', [
-'$scope',
-function($scope){
 	$scope.template = "/tracks/intro.html";
 	$scope.changeView = function(view) {
 		$('.sidebar-tab').removeClass("active");
@@ -69,25 +61,6 @@ function($scope){
 	                ];
 }]);
 
-app.controller('BlogCtrl', [
-'$scope',
-function($scope){
-	$scope.posts = [
-	                ];
-}]);
-
-app.controller('ResourcesCtrl', [
-'$scope',
-function($scope){
-
-}]);
-
-app.controller('LoginCtrl', [
-'$scope',
-function($scope){
-
-}]);
-
 app.config([
 '$stateProvider',
 '$urlRouterProvider',
@@ -102,27 +75,27 @@ function($stateProvider, $urlRouterProvider) {
 	.state('aboutus', {
 		url: '/aboutus',
 		templateUrl: '/aboutus.html',
-		controller: 'AboutUsCtrl'
+		controller: 'MainCtrl'
 	})
 	.state('tracks', {
 		url: '/tracks',
 		templateUrl: '/tracks.html',
-		controller: 'TracksCtrl'
+		controller: 'MainCtrl'
 	})
 	.state('blog', {
 		url: '/blog',
 		templateUrl: '/blog.html',
-		controller: 'BlogCtrl'
+		controller: 'MainCtrl'
 	})
 	.state('resources', {
 		url: '/resources',
 		templateUrl: '/resources.html',
-		controller: 'ResourcesCtrl'
+		controller: 'MainCtrl'
 	})
 	.state('login', {
 		url: '/login',
 		templateUrl: '/login.html',
-		controller: 'LoginCtrl'
+		controller: 'MainCtrl'
 	});
 
 	$urlRouterProvider.otherwise('home');
