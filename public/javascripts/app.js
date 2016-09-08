@@ -45,18 +45,20 @@ function($scope, $state){
 	$scope.template = "/tracks/intro.html";
 	$scope.changeView = function(view) {
 		$('.sidebar-tab').removeClass("active");
-		if(view == "intro") {
-			$scope.template = "/tracks/intro.html";
-			$('#intro-tab').addClass("active");
-		}
-		if(view == "web") {
-			$scope.template = "/tracks/web.html";
-			$('#web-tab').addClass("active");
-		}
-		if(view == "mobile") {
-			$scope.template = "/tracks/mobile.html";
-			$('#mobile-tab').addClass("active");
-		}
+		$(document).ready(function() {
+			if(view == "intro") {
+				$scope.template = "/tracks/intro.html";
+				$('#intro-tab').addClass("active");
+			}
+			if(view == "web") {
+				$scope.template = "/tracks/web.html";
+				$('#web-tab').addClass("active");
+			}
+			if(view == "mobile") {
+				$scope.template = "/tracks/mobile.html";
+				$('#mobile-tab').addClass("active");
+			}
+		});
 	}
 	$scope.posts = [
 	                {name: ""},
