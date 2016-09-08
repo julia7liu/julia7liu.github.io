@@ -6,6 +6,7 @@ app.controller('MainCtrl', [
 function($scope, $state){
 	$scope.go = function(option, view) {
 		$('.header-tab').removeClass("active");
+		$('.home-icon').removeClass("active");
 		if(option == "home") {
 			$state.go("home");
 			$('.home-icon').css({"color": "red"});

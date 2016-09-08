@@ -17,7 +17,7 @@
 			</div>
 			<ul class="header-navbar nav navbar-nav navbar-right">
 				<li class="header-tab" id="aboutus-tab"><a ng-click="go('about-us')">About Us</a></li>
-				<li class="header-tab" id="tracks-tab"><a ng-click="go('tracks')">Tracks</a></li>
+				<li class="header-tab" id="tracks-tab"><a ng-click="go('tracks', 'intro')">Tracks</a></li>
 				<li class="header-tab" id="blog-tab"><a ng-click="go('blog')">Blog</a></li>
 				<li class="header-tab" id="resources-tab"><a ng-click="go('resources')">Resources</a></li>
 				<li class="header-tab" id="login-tab"><a ng-click="go('login')"><span class="glyphicon glyphicon-user"></span></a></li>
@@ -160,9 +160,9 @@
 		<div class="row page">
 			<nav class="navbar sidebar">
 				<ul class="nav navbar-nav">
-					<li class="sidebar-tab active" id="intro-tab"><a ng-click="changeView('Intro')">Intro</a></li>
-					<li class="sidebar-tab" id="web-tab"><a ng-click="changeView('Web')">Web</a></li>
-					<li class="sidebar-tab" id="mobile-tab"><a ng-click="changeView('Mobile')">Mobile</a></li>
+					<li class="sidebar-tab" id="intro-tab"><a ng-click="changeView('intro')">Intro</a></li>
+					<li class="sidebar-tab" id="web-tab"><a ng-click="changeView('web')">Web</a></li>
+					<li class="sidebar-tab" id="mobile-tab"><a ng-click="changeView('mobile')">Mobile</a></li>
 				</ul>
 			</nav>
 			<ng-include class="tracks" src="template"></ng-include>
@@ -252,7 +252,7 @@
   		</div>
 		<div class="row page">
 			<div class="page-subheading">Credits</div>
-			<ul>Icons made by
+			<ul>
 				<li><a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
 				<li><a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
 				<li><a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
