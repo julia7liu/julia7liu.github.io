@@ -455,8 +455,10 @@ a:hover, a:active, a:focus {
 }
 
 .navbar.sidebar {
+	z-index: 1;
 	display: block;
 	position: relative;
+	padding: 10px;
 	margin-top: 40px;
 	width: 15%;
 }

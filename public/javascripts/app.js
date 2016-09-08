@@ -4,17 +4,20 @@ app.controller('MainCtrl', [
 '$scope',
 '$state',
 function($scope, $state){
-	$scope.go = function(option) {
+	$scope.go = function(option, view) {
 		$('.header-tab').removeClass("active");
 		if(option == "home") {
 			$state.go("home");
-			$('#home-tab').addClass("active");
+			$('#home-tab .span').css({"color": "red"});
 		} else if(option == "about-us") {
 			$state.go("aboutus");
 			$('#aboutus-tab').addClass("active");
 		} else if(option == "tracks") {
 			$state.go("tracks");
 			$('#tracks-tab').addClass("active");
+			if(view) {
+				$scope.changeView(view);
+			}
 		} else if(option == "blog") {
 			$state.go("blog");
 			$('#blog-tab').addClass("active");
