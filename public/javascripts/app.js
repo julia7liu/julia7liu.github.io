@@ -8,7 +8,7 @@ function($scope, $state){
 		$('.header-tab').removeClass("active");
 		if(option == "home") {
 			$state.go("home");
-			$('#home-tab .span').css({"color": "red"});
+			$('.home-icon').css({"color": "red"});
 		} else if(option == "about-us") {
 			$state.go("aboutus");
 			$('#aboutus-tab').addClass("active");
@@ -44,15 +44,15 @@ function($scope, $state){
 	$scope.template = "/tracks/intro.html";
 	$scope.changeView = function(view) {
 		$('.sidebar-tab').removeClass("active");
-		if(view == "Intro") {
+		if(view == "intro") {
 			$scope.template = "/tracks/intro.html";
 			$('#intro-tab').addClass("active");
 		}
-		if(view == "Web") {
+		if(view == "web") {
 			$scope.template = "/tracks/web.html";
 			$('#web-tab').addClass("active");
 		}
-		if(view == "Mobile") {
+		if(view == "mobile") {
 			$scope.template = "/tracks/mobile.html";
 			$('#mobile-tab').addClass("active");
 		}
